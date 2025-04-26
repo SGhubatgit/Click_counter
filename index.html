@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Click Counter Concept -->
+    <div class="counter-container">
+        <h1>Click here to increase count</h1>
+        <button onclick="count()">Click me</button>
+        <h2 id="demo">No. of times you have clicked: 0</h2>
+    </div>
+
+    <script>
+        let a = 0;
+        function count() {
+            a++;
+            document.getElementById('demo').textContent = "No. of times you have clicked: " + a;
+        }
+    </script>
+</body>
+
+</html>
